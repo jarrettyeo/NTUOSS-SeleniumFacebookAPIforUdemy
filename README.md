@@ -360,7 +360,7 @@ For web scrapping, there are libraries/packages such as ```urllib``` and ```requ
 
 For instance,
 
-```
+```python
 # course_name
 sample = soup.find("h1", "clp-lead__title")
 course_name = sample.text
