@@ -14,7 +14,6 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 BITLY_ACCESS_TOKEN = "REPLACE_ME" # replace this with your access key, for example: BITLY_ACCESS_TOKEN = "894c3beijr893nrd398"
-# BITLY_ACCESS_TOKEN = os.environ.get('BITLY_ACCESS_TOKEN')
 
 bitly = bitly_api.Connection(access_token=BITLY_ACCESS_TOKEN)
 
