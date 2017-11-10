@@ -615,7 +615,7 @@ Because the default ```bitly``` package installed by ```pip``` is [not compatibl
 
 2. Unzip both ```bitly_api.py``` and ```bitly_http.py``` into the working dir.
 
-**Step 4 - Installing certifi (Required for Mac OS only)**
+**Step 4 - Installing ```certifi``` (Required for Mac OS only)**
 
 Mac users may encounter the following error when using ```urllib```:
 
