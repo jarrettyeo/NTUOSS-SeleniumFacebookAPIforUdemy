@@ -19,7 +19,7 @@ UDEMY_EMAIL = "REPLACE_ME" # replace this with your access key, for example: UDE
 # UDEMY_EMAIL = os.environ.get('UDEMY_EMAIL_ADDRESS')
 UDEMY_PASSWORD = "REPLACE_ME" # replace this with your access key, for example: UDEMY_PASSWORD = "ilovecplusplus"
 # UDEMY_PASSWORD = os.environ.get('UDEMY_PASSWORD')
-UDEMY_FOLDER_PATH = "REPLACE_ME" # replace this with your access key, for example: UDEMY_FOLDER_PATH = "C:/Users/YOUR_USERNAME/udemy-selenium/"
+UDEMY_FOLDER_PATH = "REPLACE_ME" # replace this with your access key, for example: UDEMY_FOLDER_PATH = "C:/Users/YOUR_USERNAME/udemy-selenium/" for Windows, or "/Users/Your_Username/Desktop/udemy-selenium/"
 # Windows users beware - change all \ to / in folder path
 # UDEMY_FOLDER_PATH = os.environ.get('UDEMY_FOLDER_PATH')
 
@@ -40,7 +40,7 @@ if session.query(Course).filter(Course.discounted_price == 0).filter(Course.rema
     print("no courses to enroll from reddit. summarising and quitting...\n")
 
 else:
-    UDEMY_FOLDER_PATH = UDEMY_FOLDER_PATH + "chromedriver.exe"
+    UDEMY_FOLDER_PATH = UDEMY_FOLDER_PATH + "chromedriver.exe" # + "chromedriver" for Mac users
     driver = webdriver.Chrome(UDEMY_FOLDER_PATH)
     driver.get("https://www.udemy.com/join/login-popup/")
 
