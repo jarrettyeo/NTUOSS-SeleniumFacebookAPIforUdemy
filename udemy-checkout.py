@@ -15,7 +15,7 @@ engine = create_engine('sqlite:///courses.db')
 Session = sessionmaker(bind=engine)
 session = Session()
 
-for udemy_tr in session.query(Course).filter(Course.status == "udemy url found"):
+for udemy_tr in session.query(Course).filter(Course.status == "udemy url found").filter(Course.post_date.isnot("reddit")):
     result = requests.get(udemy_tr.udemy_url)
     assert result.status_code != "200"
 
