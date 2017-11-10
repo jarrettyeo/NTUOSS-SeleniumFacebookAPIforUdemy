@@ -289,11 +289,11 @@ Great! Let’s move on.
 
 Let’s take a look at a typical Udemy course page.
 
-Open a new browser (I’ll be using incognito/private mode in Chrome and I recommend you the same). Next, hit F12 or Control+Shift+I if you on Windows, or Command+Option+I on Mac, to open up Developer Tools.
+Open a new browser (I’ll be using incognito/private mode in Chrome and I recommend you the same). Next, hit ```F12``` or ```Control``` + ```Shift``` + ```I``` if you on Windows, or ```Command``` + ```Option``` + ```I``` on Mac, to open up Developer Tools.
 
 For each of the 4 links below, let’s do a quick exercise:
 
-1. Toggle Inspect Element Mode by hitting Control+Shift+C on Windows or Command+Shift+C on Mac.
+1. Toggle Inspect Element Mode by hitting ```Control``` + ```Shift``` + ```C``` on Windows or Command+Shift+C on Mac.
 
 2. Inspect (by hovering over) the course title, “Buy Now” button (for the “href” attribute), original price title, and discounted price title. Take note of the elements. We will be scrapping all our courses for the above – think about how we can uniquely identify them.
 
