@@ -42,7 +42,7 @@ if session.query(Course).filter(Course.discounted_price == 0).filter(Course.rema
 else:
     UDEMY_FOLDER_PATH = UDEMY_FOLDER_PATH + "chromedriver.exe"
     driver = webdriver.Chrome(UDEMY_FOLDER_PATH)
-        driver.get("https://www.udemy.com/join/login-popup/")
+    driver.get("https://www.udemy.com/join/login-popup/")
 
     # when you assert something, you tell the program to test if the condition is true.
     # if it isn't (i.e. condition is false), trigger an error.
