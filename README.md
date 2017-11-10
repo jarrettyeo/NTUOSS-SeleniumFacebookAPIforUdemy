@@ -615,6 +615,21 @@ Because the default ```bitly``` package installed by ```pip``` is [not compatibl
 
 2. Unzip both ```bitly_api.py``` and ```bitly_http.py``` into the working dir.
 
+**Step 4 - Installing certifi (Required for Mac OS only)**
+
+Mac users may encounter the following error when using ```urllib```:
+
+```
+URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:581)>
+```
+
+The error can be resolved by [installing the certifi package](https://stackoverflow.com/a/42334357), all you need to do is to execute the following command on your Terminal: 
+
+```
+/Applications/Python\ 3.6/Install\ Certificates.command
+```
+
+
 #### 4.4 Checkpoint 4
 
 That took a while. Now, let’s do a thorough check on our files so that everything we need is in place.
