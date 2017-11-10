@@ -638,9 +638,10 @@ URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai
 The error can be resolved by [installing the certifi package](https://stackoverflow.com/a/42334357), all you need to do is to execute the following command on your Terminal:
 
 ```
-/Applications/Python\ 3.6/Install\ Certificates.command
+sudo /Applications/Python\ 3.6/Install\ Certificates.command
 ```
 
+Of course, key in your password thereafter.
 
 #### 4.4 Checkpoint 4
 
@@ -762,6 +763,8 @@ I have compiled a brief list of common errors. You are encouraged to check this 
 
 Run cmd as administrator.
 
+As for DB Browser, try running it as admin as well.
+
 #### 7.2 Unable to Generate bit.ly Access Token
 
 You need to verify your account first!
@@ -801,7 +804,6 @@ It seems that users with a fresh installation of Python 3.6, pip and packages do
 You can try upgrading Python to the latest version (we tested this with 3.6.3), as well as updating your packages using pip as well.
 
 Please hit me up if you have found a resolution to this error. Many thanks in advance.
-
 ___
 
 ## Test Info
