@@ -192,7 +192,7 @@ cd udemy-selenium
 
 Now we need to create a py file that constructs our sqlite database in the working directory.
 
-There is no need for you to copy-paste and create this file manually. Right-click [here](tabledef.py) and save it as ```tabledef.py``` into your working directory.
+There is no need for you to copy-paste and create this file manually. Right-click [here](https://raw.githubusercontent.com/jarrettyeo/NTUOSS-SeleniumFacebookAPIforUdemy/master/tabledef.py) and save it as ```tabledef.py``` into your working directory.
 
 #### 1.4 Create SQLite Database
 
@@ -242,7 +242,7 @@ Source 3 of our coupons comes from a [Reddit post](https://www.reddit.com/r/lear
 
 If you take a close look at the links, there are extra text headers and some of them are not in proper format that we can use as URLs. We thus need to clean the data before we import the Udemy URLs into our database, but fret not, I have already done so for you as a CSV file.
 
-Right-click [here](reddit.csv), save as ```reddit.csv``` into your working directory.
+Right-click [here](https://raw.githubusercontent.com/jarrettyeo/NTUOSS-SeleniumFacebookAPIforUdemy/master/reddit.csv), save as ```reddit.csv``` into your working directory.
 
 So you should have 3 files in your working dir now: ```tabledef.py```, ```reddit.csv``` and ```courses.db```.
 
@@ -256,7 +256,7 @@ Let’s check ```reddit-csv-udemy.py``` file out:
 
 The code basically imports every Udemy URL as a separate entry into our db.
 
-Right-click [here](reddit-csv-udemy.py), save as ```reddit-csv-udemy.py``` into your working dir, and execute the following:
+Right-click [here](https://raw.githubusercontent.com/jarrettyeo/NTUOSS-SeleniumFacebookAPIforUdemy/master/reddit-csv-udemy.py), save as ```reddit-csv-udemy.py``` into your working dir, and execute the following:
 
 **Windows**
 
@@ -348,7 +348,7 @@ We’ll come back to this later, but now we realise that it’s easier to retrie
 
 The magic begins!
 
-Right-click the link [here](reddit-udemy-checkout.py), and save as ```reddit-udemy-checkout.py``` on the same working directory.
+Right-click the link [here](https://raw.githubusercontent.com/jarrettyeo/NTUOSS-SeleniumFacebookAPIforUdemy/master/reddit-udemy-checkout.py), and save as ```reddit-udemy-checkout.py``` on the same working directory.
 
 Before we run the code, let’s take a brief look at what our code does.
 
@@ -450,7 +450,7 @@ Before we begin, let’s look at the overview of this step.
 
 #### 3.3 Selenium Web Automation
 
-Right-click this file [here](reddit-checkout-enroll.py), save as ```reddit-checkout-enroll.py``` into your working dir.
+Right-click this file [here](https://raw.githubusercontent.com/jarrettyeo/NTUOSS-SeleniumFacebookAPIforUdemy/master/reddit-checkout-enroll.py), save as ```reddit-checkout-enroll.py``` into your working dir.
 
 Don’t worry, we will be explaining the bulk of the code in the comments of the py file.
 
@@ -539,15 +539,15 @@ Let’s get this done really quickly.
 
 The same drill again. Right-click on all the following ```.py``` files and save them as their filenames are into your working dir.
 
-[facebook-bitly.py](facebook-bitly.py)
+[facebook-bitly.py](https://raw.githubusercontent.com/jarrettyeo/NTUOSS-SeleniumFacebookAPIforUdemy/master/facebook-bitly.py)
 
-[bitly-expanded.py](bitly-expanded.py)
+[bitly-expanded.py](https://raw.githubusercontent.com/jarrettyeo/NTUOSS-SeleniumFacebookAPIforUdemy/master/bitly-expanded.py)
 
-[expanded-udemy.py](expanded-udemy.py)
+[expanded-udemy.py](https://raw.githubusercontent.com/jarrettyeo/NTUOSS-SeleniumFacebookAPIforUdemy/master/expanded-udemy.py)
 
-[udemy-checkout.py](udemy-checkout.py)
+[udemy-checkout.py](https://raw.githubusercontent.com/jarrettyeo/NTUOSS-SeleniumFacebookAPIforUdemy/master/udemy-checkout.py)
 
-[checkout-enroll.py](checkout-enroll.py)
+[checkout-enroll.py](https://raw.githubusercontent.com/jarrettyeo/NTUOSS-SeleniumFacebookAPIforUdemy/master/checkout-enroll.py)
 
 Notice how we have broken up each step in 4.1 into separate python files for clarity. We will explain to you briefly how things work using the source files.
 
