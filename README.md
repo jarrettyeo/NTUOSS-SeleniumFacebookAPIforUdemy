@@ -611,9 +611,13 @@ BITLY_ACCESS_TOKEN = "REPLACE_ME" # replace this with your access key, for examp
 
 Because the default ```bitly``` package installed by ```pip``` is [not compatible with Python 3](https://github.com/bitly/bitly-api-python/issues/39), we will need to manually provide edited bitly modules so that we can call the bitly API:
 
-1. Navigate to [this Dropbox link](https://www.dropbox.com/s/7vbsda9hbgodq77/bitly.zip?dl=0), and download the zip file.
+Right-click both files below and save as their file names are into your working directory:
 
-2. Unzip both ```bitly_api.py``` and ```bitly_http.py``` into the working dir.
+[bitly_api.py](https://raw.githubusercontent.com/jarrettyeo/NTUOSS-SeleniumFacebookAPIforUdemy/master/bitly_api.py)
+
+[bitly_http.py](https://raw.githubusercontent.com/jarrettyeo/NTUOSS-SeleniumFacebookAPIforUdemy/master/bitly_http.py)
+
+Original source can be found [here](https://www.dropbox.com/s/7vbsda9hbgodq77/bitly.zip?dl=0).
 
 **Step 4 - Installing ```certifi``` (Required for Mac OS only)**
 
