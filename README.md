@@ -7,15 +7,17 @@
 ___
 
 **Disclaimer:** *This document is only meant to serve as a reference for the attendees of the workshop. It does not cover all the concepts or implementation details discussed during the actual workshop.*
+
+**Update 10 November 2017:** *It seems like Udemy has removed or disabled the signing up of some courses. There will be several courses which you will not be able to enroll yourself in.*
 ___
 
-### Questions
+### Questions & Sharing
 
-If you have a question, feel free to raise your hand any time during the workshop or email your questions to [me](mailto:shanwei96@gmail.com).
+If you have a question, feel free to raise your hand any time during the workshop or email your questions to [me](mailto:shanwei96@gmail.com). You can always hit me up if you would like to share with me your progress too.
 
 ### Errors
 
-For errors, typos or suggestions, please do not hesitate to [post an issue](https://github.com/jarrettyeo/UPDATE_THIS/issues/new). Thank you!
+For errors, typos or suggestions, please do not hesitate to [post an issue](https://github.com/jarrettyeo/NTUOSS-SeleniumFacebookAPIforUdemy/issues). Thank you!
 ___
 
 ## Introduction
@@ -26,7 +28,7 @@ Udemy, one of the biggest online course platforms, offers tons of comprehensive 
 
 Here’s what you’ll be able to get for yourself just by attending this workshop:
 
-~800 paid courses worth a total of $100,000
+~800 paid courses worth a total of $100,000~
 
 ## What’s New
 
@@ -84,6 +86,10 @@ Feel free to hit me up to check your homework with me!
 #### Part VI
 
 Possible future enhancements. Will be explained below.
+
+#### Part VII
+
+FAQ
 
 ___
 
@@ -597,7 +603,9 @@ FACEBOOK_KEY = "REPLACE_ME" # replace this with your access key, for example: FA
 
 2. Go to [this link](https://app.bitly.com/bbt2/).
 
-3. Click on top-right hamburger menu icon, click on your email, click on Generic Access Token, key in password, then Generate to get your bitly key.
+3. **Important:** Check your inbox and verify your account.
+
+4. Click on top-right hamburger menu icon, click on your email, click on Generic Access Token, key in password, then Generate to get your bitly key.
 
 >This API key will be your access token.
 
@@ -627,7 +635,7 @@ Mac users may encounter the following error when using ```urllib```:
 URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:581)>
 ```
 
-The error can be resolved by [installing the certifi package](https://stackoverflow.com/a/42334357), all you need to do is to execute the following command on your Terminal: 
+The error can be resolved by [installing the certifi package](https://stackoverflow.com/a/42334357), all you need to do is to execute the following command on your Terminal:
 
 ```
 /Applications/Python\ 3.6/Install\ Certificates.command
@@ -744,9 +752,65 @@ ___
 
 ___
 
+## Part VII
+
+#### 7.0 FAQ & Common Errors
+
+I have compiled a brief list of common errors. You are encouraged to check this list first before hitting me up.
+
+#### 7.1 Errors Creating / Accessing / Writing to courses.db (Windows 10)
+
+Run cmd as administrator.
+
+#### 7.2 Unable to Generate bit.ly Access Token
+
+You need to verify your account first!
+
+#### 7.3 Errors with ```checkout-enroll.py``` or ```reddit-checkout-enroll.py```
+
+**Windows**
+
+Check 1: This is most probably caused by an incorrect ```UDEMY_FOLDER_PATH```. Check the file path. It should look something like this: ```UDEMY_FOLDER_PATH = "C:/Users/YOUR_USERNAME/udemy-selenium/"```.
+
+>**Note:**<br>
+>1. \ is replaced with / in the folder path.
+>2. The path ends with /
+>3. And of couse, you replace the above with your actual username.
+
+Check 2:
+
+Check if you have extracted ```chromedriver.exe``` into the working directory.
+
+**Mac**
+
+Check 1: This is most probably caused by an incorrect ```UDEMY_FOLDER_PATH```. Check the file path. It should look something like this: ```UDEMY_FOLDER_PATH = "/Users/Your_Username/Desktop/udemy-selenium/"```.
+
+>**Note:**<br>
+>1. The folder path begins with /
+>2. The path ends with /
+>3. And of couse, you replace the above with your actual username.
+
+Check 2: Check if you have extracted ```chromedriver``` into the working directory.
+
+Check 3: Remember to use ```chromedriver``` instead of ```chromedriver.exe```.
+
+#### 7.4 StringIO Error *(Unresolved)*
+
+It seems that users with a fresh installation of Python 3.6, pip and packages do not face this problem.
+
+You can try upgrading Python to the latest version (we tested this with 3.6.3), as well as updating your packages using pip as well.
+
+Please hit me up if you have found a resolution to this error. Many thanks in advance.
+
+___
+
 ## Test Info
 
-This tutorial has been tested using a Windows 7 computer running Home Premium SP1. It is accurate as of 10 November 2017.
+This tutorial has been tested using a Windows 7 computer running Home Premium SP1 and a MacBook Air running OS X Version 10.9.5. It is accurate as of 10 November 2017.
+
+## bit.ly Link
+
+Linking to this Github repo? Feel free to use [this link](bit.ly/ntu-oss).
 
 ## Acknowledgements
 
@@ -758,4 +822,4 @@ Many thanks to [Chang Kai Lin, Ries](https://www.instagram.com/kailinchanggg/) f
 
 ## Postface
 
-Very regrettably, there are many areas of improvement for the code used in this workshop. I promise you that I will polish it when time permits.
+There are many areas of improvement for the code used in this workshop. I promise you that I will polish it when time permits.
