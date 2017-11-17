@@ -3,7 +3,7 @@
 
 *by [Jarrett Yeo](https://github.com/jarrettyeo) for NTU Open Source Society*
 
-*Date last updated: 10 November 2017*
+*Date last updated: 17 November 2017*
 ___
 
 **Disclaimer:** *This document is only meant to serve as a reference for the attendees of the workshop. It does not cover all the concepts or implementation details discussed during the actual workshop.*
@@ -797,13 +797,16 @@ Check 2: Check if you have extracted ```chromedriver``` into the working directo
 
 Check 3: Remember to use ```chromedriver``` instead of ```chromedriver.exe```.
 
-#### 7.4 StringIO Error *(Unresolved)*
+#### 7.4 StringIO Error
 
-It seems that users with a fresh installation of Python 3.6, pip and packages do not face this problem.
+Encountering ```StringIO Error``` while running ```bitly-expanded.py```? 
 
-You can try upgrading Python to the latest version (we tested this with 3.6.3), as well as updating your packages using pip as well.
+Upgrade Python on your machine to 3.6 (we managed to resolve this successfully on both 3.6.2 and 3.6.3).
 
-Please hit me up if you have found a resolution to this error. Many thanks in advance.
+>**Note:**<br>
+>It seems that users with a fresh installation of Python 3.6, pip and the required packages do not face this problem. However, users with older Python versions of 3.5 and earlier are likely to hit this error.
+
+Credits to [Chris](https://github.com/chrismaltais) for reporting and resolving this issue.
 ___
 
 ## Test Info
@@ -824,4 +827,4 @@ Many thanks to [Chang Kai Lin, Ries](https://www.instagram.com/kailinchanggg/) f
 
 ## Postface
 
-There are many areas of improvement for the code used in this workshop. I promise you that I will polish it when time permits.
+This workshop aims to take beginners through an easy-to-follow step-by-step tutorial with every file we execute reflecting a specific step of the work process - the code is not intended to be polished. 
