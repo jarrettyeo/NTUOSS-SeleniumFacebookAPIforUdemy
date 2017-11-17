@@ -1,5 +1,5 @@
 # NTUOSS Selenium & Facebook API for Udemy Workshop
-### Instructions for Web Automation for Enrollment into ~800 Udemy courses worth ~$100,000
+### Instructions for Web Automation for Enrollment into ~800 Udemy courses worth ~$80,000
 
 *by [Jarrett Yeo](https://github.com/jarrettyeo) for NTU Open Source Society*
 
@@ -28,7 +28,7 @@ Udemy, one of the biggest online course platforms, offers tons of comprehensive 
 
 Here’s what you’ll be able to get for yourself just by attending this workshop:
 
-~800 paid courses worth a total of $100,000~
+800 paid courses worth a total of $80,000
 
 ## What’s New
 
@@ -815,7 +815,7 @@ This tutorial has been tested using a Windows 7 computer running Home Premium SP
 
 ## bit.ly Link
 
-Linking to this Github repo? Feel free to use [this link](bit.ly/ntu-oss).
+Linking to this Github repo? Feel free to use [this link](https://www.bit.ly/ntu-oss).
 
 ## Acknowledgements
 
