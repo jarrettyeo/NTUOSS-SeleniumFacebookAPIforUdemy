@@ -40,6 +40,24 @@ if session.query(Course).filter(Course.discounted_price == 0).filter(Course.rema
     print("no courses to enroll from reddit. summarising and quitting...\n")
 
 else:
+    ############ Uncomment this to use the new Headless Chrome browser - No GUI and enables server-side automation ##########
+    ############ Verified to work on Mac OSX, have not tested for Windows. ##################################################
+    ############ Headless Chrome is new and Windows was last to be implemented ##############################################
+    ## We can customize our webdriver using
+    #options = webdriver.ChromeOptions()
+    ## This option implements Chrome Headless, a new (late 2017) GUI-less browser that allows flexibility with server-side web automation
+    ## Must be Chromedriver 2.9 and above (chromedriverheadless is 2.33)
+    #options.add_argument('--headless')
+    ## When using a Chrome's headless browser, it's 'user agent' (which is it's identity in source code) is HeadlessChrome, 
+    ## which 3rd party bot tracking software will try to identify and block by forcing a CAPTCHA.
+    ## Therefore we specify the desired user agent to be "Chrome", tricking the detection software.
+    ## It can actually literally be anything other than HeadlessChrome, but this makes the most sense.
+    #user_agent = "Chrome"
+    #options.add_argument(f'user-agent={user_agent}')
+    #UDEMY_FOLDER_PATH = UDEMY_FOLDER_PATH + "chromedriverheadless" # + "chromedriverheadless.exe" for Windows users
+    #driver = webdriver.Chrome(UDEMY_FOLDER_PATH, chrome_options=options)
+    ###############################################################################################################################
+    
     UDEMY_FOLDER_PATH = UDEMY_FOLDER_PATH + "chromedriver.exe" # + "chromedriver" for Mac users
     driver = webdriver.Chrome(UDEMY_FOLDER_PATH)
     driver.get("https://www.udemy.com/join/login-popup/")
